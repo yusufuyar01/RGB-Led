@@ -36,7 +36,7 @@ Bu proje, Arduino platformu kullanılarak RGB LED'lerin nasıl kontrol edileceğ
     - Yeşil LED'in uzun bacağını 9. pine, kısa bacağını bir dirence ve direncin diğer ucunu GND'ye bağlayın.
     - Mavi LED'in uzun bacağını 10. pine, kısa bacağını bir dirence ve direncin diğer ucunu GND'ye bağlayın.
 
-![Image](https://github.com/user-attachments/assets/ffe04db5-1d5d-42b5-a473-0ddad990ff77)
+![Image](https://github.com/user-attachments/assets/66e8613d-2d10-481e-933d-ccc73b76d979)
 
 ## Kullanım
 
