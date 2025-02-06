@@ -1,0 +1,51 @@
+int kirmiziPin = 8;//kırmızı LED'i 8. pine bağladık.
+int yesilPin = 9;//yeşil LED'i 9. pine bağladık.
+int maviPin = 10;//mavi LED'i 10. pine bağladık.
+
+
+void setup() {
+  pinMode(kirmiziPin, OUTPUT);//8.pinden çıkış verdik.
+  pinMode(yesilPin, OUTPUT);//9.pinden çıkış verdik.
+  pinMode(maviPin, OUTPUT);//10. pinden çıkış verdik.
+
+}
+
+void loop() {
+  //ilk önce bütün ledler sönük.
+  digitalWrite(kirmiziPin, LOW);
+  digitalWrite(yesilPin, LOW);
+  digitalWrite(maviPin, LOW);
+  delay(1000);//1 saniye bekledik.
+
+
+  //2. olarak sadece kırmızı led yanar.
+  digitalWrite(kirmiziPin, HIGH);
+  digitalWrite(yesilPin, LOW);
+  digitalWrite(maviPin, LOW);
+  delay(1000);//1 saniye bekledik.
+
+  //3. olarak sadece yeşil led yanar.
+  digitalWrite(kirmiziPin, LOW);
+  digitalWrite(yesilPin, HIGH);
+  digitalWrite(maviPin, LOW);
+  delay(1000);//1 saniye bekledik.
+
+  //4. olarak sadece mavi led yanar. 
+  digitalWrite(kirmiziPin, LOW);
+  digitalWrite(yesilPin, LOW);
+  digitalWrite(maviPin, HIGH);
+  delay(1000);//1 saniye bekledik.
+  
+  //5. oalrak sarı renk için kırmızı ve yeşili aynanda yakıyoruz.
+  digitalWrite(kirmiziPin, HIGH);
+  digitalWrite(yesilPin, HIGH);
+  digitalWrite(maviPin, LOW);
+  delay(1000);//1 saniye bekledik.
+
+  //6. olarak beyaz renk için bütün ledleri yakıyoruz.
+  digitalWrite(kirmiziPin, HIGH);
+  digitalWrite(yesilPin, HIGH);
+  digitalWrite(maviPin, HIGH);
+  delay(1000);//1 saniye bekledik.
+  
+}
